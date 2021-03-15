@@ -1,0 +1,27 @@
+### SignUp request
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "email": "fazt@faztweb.com",
+  "password": "password"
+}
+
+### Signin request
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+  "email": "fazt@faztweb.com",
+  "password": "password"
+}
+
+### Special request
+GET http://localhost:3000/special
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDc3ODRhNjdiZmZmY2Y4NDkwYjg5ZiIsImVtYWlsIjoiZmF6dEBmYXp0d2ViLmNvbSIsImlhdCI6MTYxNTMwMTYyMywiZXhwIjoxNjE1Mzg4MDIzfQ.mlIXM4HxIzVcRp1ET6Az-M8gZxqYKQoWQBKBRTKkfTQ
+
+{
+  "email": "fazt@faztweb.com",
+  "password": "password"
+}
