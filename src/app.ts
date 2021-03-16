@@ -6,6 +6,7 @@ import passport from 'passport';
 import passportMidlewares from './middlewares/passport';
 import authRoutes from './routes/auth.routes';
 import specialRoutes from './routes/special.routes';
+import labsRoutes from './routes/labs.routes';
 
 // initializations
 const app = express();
@@ -28,5 +29,6 @@ app.get('/', (req, res) => {
 
 app.use(authRoutes);
 app.use(specialRoutes);
+app.use('/labs', labsRoutes);
 
 export default app;

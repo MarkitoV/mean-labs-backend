@@ -1,3 +1,7 @@
+#####################
+### LOGIN REQUEST ###
+#####################
+
 ### SignUp request
 POST http://localhost:3000/signup
 Content-Type: application/json
@@ -25,3 +29,36 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDc3ODRhN
   "email": "fazt@faztweb.com",
   "password": "password"
 }
+
+############################
+### LABORATORIES REQUEST ###
+############################
+
+### Create a new Laboratory
+POST http://localhost:3000/labs
+Content-Type: application/json
+
+{
+  "title": "Lab 2",
+  "description": "lab 2",
+  "subjectCode": "sis-100",
+  "subjectName": "sistemas 1",
+  "numberLab": 1
+}
+
+### Get all laboratories
+GET http://localhost:3000/labs
+
+### Get one laboratory by ID
+GET http://localhost:3000/labs/6050bd3d68754b76085e0c57
+
+### Update one Laboratory by ID
+PUT http://localhost:3000/labs/6050bbaa86377c2910abde29
+Content-Type: application/json
+
+{
+  "title": "1er Laboratorio"
+}
+
+### Delete one laboratory by ID
+DELETE http://localhost:3000/labs/6050bd3d68754b76085e0c57
